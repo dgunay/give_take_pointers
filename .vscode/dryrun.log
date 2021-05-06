@@ -1,0 +1,17 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/devin/code/c++/give_take_pointers'
+ 
+echo "Creating directories"
+mkdir -p build/
+mkdir -p build/bin
+make all
+ 
+make[1]: Entering directory '/home/devin/code/c++/give_take_pointers'
+ 
+echo "Making symlink: runner -> build/bin/runner"
+rm -f runner
+ln -s build/bin/runner runner
+make[1]: Leaving directory '/home/devin/code/c++/give_take_pointers'
+ 
+make: Leaving directory '/home/devin/code/c++/give_take_pointers'
+ 
